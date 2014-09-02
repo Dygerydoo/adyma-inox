@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="{% block description %}{% endblock %}" />
     <meta name="keywords" content="{% block keywords %}{% endblock %}" />
-    <title>{% block title %}{% endblock %}</title>
+    <title>{% block title %}lkkhklh{% endblock %}</title>
     {% block stylesheets %}{% endblock %}
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     {% javascripts
@@ -16,14 +16,52 @@
     {% endjavascripts %}
     {% stylesheets
     'bundles/adymamain/css/main.css'
+    'bundles/adymamain/css/normalize.css'
     filter='cssrewrite'
     %}
     <link rel="stylesheet" href="{{ asset_url }}" />
     {% endstylesheets %}
 
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="{{ path('homepage') }}">{{ 'menu.inicio'|trans }}</a>
+            </li>
+            <li>
+                <a href="{{ path('hosteleria') }}">{{ 'menu.hosteleria'|trans }}</a>
+            </li>
+            <li>
+                <a href="{{ path('homepage') }}">{{ 'menu.naval'|trans }}</a>
+            </li>
+            <li>
+                <a href="{{ path('homepage') }}">{{ 'menu.laboratorios'|trans }}</a>
+            </li>
+            <li>
+                <a href="{{ path('homepage') }}">{{ 'menu.inoxdeco'|trans }}</a>
+            </li>
+            <li>
+                <a href="{{ path('homepage') }}">{{ 'menu.cerrajeria'|trans }}</a>
+            </li>
+            <li>
+                <a href="{{ path('homepage') }}">{{ 'menu.barbacoas'|trans }}</a>
+            </li>
+            <li>
+                <a href="{{ path('homepage') }}">{{ 'menu.accesorioscocina'|trans }}</a>
+            </li>
+            <li>
+                <a href="{{ path('homepage') }}">{{ 'menu.contacto'|trans }}</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+    <footer>
+        <p> {{ 'footer.direction'|trans }} | <a href="#infolegal">{{ 'footer.legal'|trans }}</a></p>
+    </footer>
     <!--Analytics-->
     <script>
     </script>
     {% block javascripts %}{% endblock %}
-</body>
 </html>

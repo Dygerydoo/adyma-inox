@@ -1,2 +1,20 @@
-index:
-    inicio: inicio
+seo:
+    index:
+        title: Adyma Inox
+        description: Blablablablablabla #CAMBIAR
+        keywords: Pensarselas bien #CAMBIAR
+
+menu:
+    inicio: Adyma Inox
+    hosteleria: Hosteleria
+    naval: Mobiliario naval
+    laboratorios: Mobiliario laboratorios
+    inoxdeco: Decoración Inoxidable
+    cerrajeria: Cerrajería
+    barbacoas: Barbacoas
+    accesorioscocina: Accesorios de Cocina
+    contacto: Contacto
+
+footer:
+    direction: 'Adyma Inox, construcciones metálicas. Calderers, 56. 46120, Alboraya, Valencia. Tel.: 961 861 241'
+    legal: Info. Legal
