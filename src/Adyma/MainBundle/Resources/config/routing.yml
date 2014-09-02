@@ -1,3 +1,6 @@
 adyma_main_homepage:
     path:     /
-    defaults: { _controller: AdymaMainBundle:Default:index }
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'AdymaMainBundle:Default:index.html.twig'
+        private: false
