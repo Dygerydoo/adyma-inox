@@ -56,12 +56,18 @@
             </li>
         </ul>
     </nav>
-</body>
+    {% block body %}{% endblock %}
     <footer>
         <p> {{ 'footer.direction'|trans }} | <a href="#infolegal">{{ 'footer.legal'|trans }}</a></p>
+        <div class="socialfoo">
+            <a href=""><img src={{ asset('bundles/adymamain/images/social/fb.png') }} alt="Facebook"></a>
+            <a href=""><img src={{ asset('bundles/adymamain/images/social/gplus.png') }} alt="Google +"></a>
+            <a href=""><img src={{ asset('bundles/adymamain/images/social/twitter.png') }} alt="Twitter"></a>
+        </div>
     </footer>
     <!--Analytics-->
     <script>
     </script>
     {% block javascripts %}{% endblock %}
+    </body>
 </html>
