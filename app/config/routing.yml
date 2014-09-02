@@ -1,0 +1,4 @@
+adyma_main:
+    resource: "@AdymaMainBundle/Resources/config/routing.yml"
+    prefix:   /
+

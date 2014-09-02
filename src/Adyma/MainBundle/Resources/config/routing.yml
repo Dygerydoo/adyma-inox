@@ -1,0 +1,3 @@
+adyma_main_homepage:
+    path:     /
+    defaults: { _controller: AdymaMainBundle:Default:index }

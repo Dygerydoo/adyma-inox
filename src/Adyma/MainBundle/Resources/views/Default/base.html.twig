@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="{% block description %}{% endblock %}" />
+    <meta name="keywords" content="{% block keywords %}{% endblock %}" />
+    <title>{% block title %}{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    {% javascripts
+    '@AdymaMainBundle/Resources/public/js/jquery-1.11.1.min.js'
+    '@AdymaMainBundle/Resources/public/js/cookies/jquery.cookie.js'
+    '@AdymaMainBundle/Resources/public/js/cookies/cookiecuttr.js'
+    %}
+    <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+    {% stylesheets
+    'bundles/AdymaMainBundle/css/main-min.css'
+    filter='cssrewrite'
+    %}
+    <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+
+    <!--Analytics-->
+    <script>
+    </script>
+    {% block javascripts %}{% endblock %}
+</body>
+</html>
