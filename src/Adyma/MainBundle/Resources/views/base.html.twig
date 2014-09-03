@@ -11,6 +11,7 @@
     '@AdymaMainBundle/Resources/public/js/jquery-1.11.1.min.js'
     '@AdymaMainBundle/Resources/public/js/cookies/jquery.cookie.js'
     '@AdymaMainBundle/Resources/public/js/cookies/cookiecuttr.js'
+    '@AdymaMainBundle/Resources/public/js/main.js'
     %}
     <script src="{{ asset_url }}"></script>
     {% endjavascripts %}
@@ -45,8 +46,13 @@
             <li>
                 <a href="{{ path('homepage') }}">{{ 'menu.cerrajeria'|trans }}</a>
             </li>
-            <li>
-                <a href="{{ path('homepage') }}">{{ 'menu.barbacoas'|trans }}</a>
+            <li class="navliesp">
+                <a href="{{ path('kcone') }}">{{ 'menu.barbacoas'|trans }}</a>
+                <ul>
+                    <li class="navlisub">
+                        <a href="{{ path('kcone') }}">{{ 'menu.kcone'|trans }}</a>
+                    </li>
+                </ul>
             </li>
             <li>
                 <a href="{{ path('homepage') }}">{{ 'menu.accesorioscocina'|trans }}</a>

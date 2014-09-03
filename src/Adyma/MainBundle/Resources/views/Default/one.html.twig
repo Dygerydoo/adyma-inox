@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>{% block title %} {{ 'seo.index.title'|trans }} {% endblock title %}</title>
+<meta name="description" content="{% block description %}{{ 'seo.index.description'|trans }}{% endblock description %}" />
+<meta name="keywords" content="{% block keywords %}{{ 'seo.index.keywords'|trans }}{% endblock keywords %}" />
+{% javascripts
+    '@AdymaMainBundle/Resources/public/js/jquery-1.11.1.min.js'
+    '@AdymaMainBundle/Resources/public/js/fullPage-min.js'
+    %}
+    <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% stylesheets
+'bundles/adymamain/css/one.css'
+'bundles/adymamain/css/fullPage.css'
+filter='cssrewrite'
+%}
+<link rel="stylesheet" href="{{ asset_url }}" />
+{% endstylesheets %}
+</head>
+
+<body>
+<nav>
+    <ul>
+        <li><a href="{{ path('homepage') }}">{{ 'menu.inicio'|trans }}</a></li>
+        <li><a href="#prestaciones">{{ 'menukcone.prestaciones'|trans }}</a></li>
+        <li><a href="#uso">{{ 'menukcone.usos'|trans }}</a></li>
+        <li><a href="#fabricación">{{ 'menukcone.fabricacion'|trans }}</a></li>
+        <li><a href="#utilidades">{{ 'menukcone.utilidades'|trans }}</a></li>
+    </ul>
+</nav>
+</body>
+
+
+</html>

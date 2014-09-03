@@ -11,3 +11,10 @@ hosteleria:
         _controller: FrameworkBundle:Template:template
         template: 'AdymaMainBundle:Default:hosteleria.html.twig'
         private: false
+
+kcone:
+    path:     /barbacoas/one
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'AdymaMainBundle:Default:one.html.twig'
+        private: false

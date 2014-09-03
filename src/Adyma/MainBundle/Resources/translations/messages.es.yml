@@ -12,8 +12,15 @@ menu:
     inoxdeco: Decoración Inoxidable
     cerrajeria: Cerrajería
     barbacoas: Barbacoas
+    kcone: KC-ONE
     accesorioscocina: Accesorios de Cocina
     contacto: Contacto
+
+menukcone:
+    prestaciones: Prestaciones
+    usos: Usos
+    fabricacion: Fabricación
+    utilidades: Utilidades
 
 footer:
     direction: 'Adyma Inox, construcciones metálicas. Calderers, 56. 46120, Alboraya, Valencia. Tel.: 961 861 241'
