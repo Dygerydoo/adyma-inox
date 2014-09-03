@@ -9,8 +9,10 @@ nav{
     height: 60px;
 }
 nav ul{
-    margin: 0;
+    margin: 0 auto;
     list-style-type: none;
+    max-width: 1000px;
+    margin-top: 1%;
 }
 nav ul li{
     margin-top: 20px;
@@ -25,6 +27,20 @@ nav ul li a{
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
+    border-bottom:2px solid transparent;
+    padding-bottom: 2px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+nav ul li a:hover{
+    border-bottom:2px solid white;
+    padding-bottom: 2px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
 }
 footer{
     position: absolute;
@@ -37,6 +53,10 @@ footer{
 }
 footer a {
     color:white;
+}
+footer p{
+    font-weight: bold;
+    font-size: 10px;
 }
 .socialfoo{
     position: absolute;
@@ -69,4 +89,5 @@ footer a {
     text-align: center;
     color: white;
     font-family: 'Montserrat';
+    text-transform: uppercase;
 }
