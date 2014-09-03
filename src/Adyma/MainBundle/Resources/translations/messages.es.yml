@@ -16,6 +16,10 @@ menu:
     accesorioscocina: Accesorios de Cocina
     contacto: Contacto
 
+indexsections:
+    somos: ¿Quiénes Somos?
+    description: 'Adyma inox es una empresa joven, creativa y dinámica,<br> formada por un equipo de profesionales con decadas de experiencia en el acero inoxidable.'
+
 menukcone:
     prestaciones: Prestaciones
     usos: Usos

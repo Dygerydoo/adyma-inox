@@ -42,9 +42,30 @@ nav ul li a:hover{
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
+.navliesp{
+    width: 6.4%;
+    height: 18px;
+    overflow: hidden;
+}
+.navliesp:hover{
+    overflow: initial;
+    height:60px;
+    border-bottom: 1px solid #fff;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.navlisub{
+    margin-top: 15px;
+    position: relative;
+    left: -40px;
+    border: none;
+    width: 51px;
+}
 footer{
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    bottom: -1220px;
     width: 100%;
     font-size: 12px;
     background: #111111;
@@ -90,15 +111,26 @@ footer p{
     color: white;
     font-family: 'Montserrat';
     text-transform: uppercase;
+    font-size:31px;
 }
 .indexsections {
     position: absolute;
     margin-top: 45.8%;
     height: 1200px;
     width: 100%;
-    background: rgb(238, 72, 72);
+    background: white;
+    z-index: -999;
 }
-/* Equipo */
+.knowadyma{
+    color: white;
+    background: black;
+    font-family: 'Montserrat';
+    height: 90px;
+    position: relative;
+    top: 66px;
+    text-align: center;
+}
+/* Secciones Index */
 .teaminfo{
     width:310px;
     background:white;
@@ -126,7 +158,7 @@ footer p{
     font-size:14px;
     margin-top:0;
     margin-bottom:0;
-    padding-top:26px;
+    padding-top: 20px;
     text-align:left;
 }
 .teamdescription p{
@@ -136,12 +168,13 @@ footer p{
     margin-top:0;
     margin-bottom:0;
     text-align:left;
+    width: 80%;
 }
 .arrow{
     position:relative;
     right:11px;
     float:right;
-    top:-34px;
+    top: -41px;
     -webkit-transition: all 300ms linear;
     -moz-transition: all 300ms linear;
     -ms-transition: all 300ms linear;

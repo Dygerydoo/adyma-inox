@@ -121,6 +121,20 @@ footer p{
     background: white;
     z-index: -999;
 }
+.indexsectionsh3{
+    position: relative;
+    top: 64px;
+    text-align: center;
+    font-size: 30px;
+    color: #2e2e2e;
+    font-family: 'Montserrat';
+    margin: 0;
+    text-transform: uppercase;
+}
+.indexsectionsp{
+    position: relative;
+    top: 27%;
+}
 .knowadyma{
     color: white;
     background: black;

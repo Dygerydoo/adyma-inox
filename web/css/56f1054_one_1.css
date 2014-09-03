@@ -1,0 +1,50 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Arimo:400,700);
+html, html a {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+body{
+    margin:0;
+}
+nav{
+    position:fixed;
+    right:0;
+    top:0;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+    float: right;
+    position: relative;
+    right: 10%;
+    background: #999;
+    border-radius: 0px 0px 7px 7px;
+}
+nav li{
+    float:left;
+    padding:6px;
+    list-style-type: none;
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Arimo';
+    font-weight: 700;
+}
+.sc0{
+    background: url('../../bundles/adymamain/images/kcone/viewsc0.png');
+    background-size:cover;
+}
+.sc1{
+    background: url('../../bundles/adymamain/images/kcone/viewsc1.png');
+    background-size:cover;
+}
+.logosc0{
+    display:block;
+    margin:auto;
+    position: relative;
+    top: -21%;
+}

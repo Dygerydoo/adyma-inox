@@ -69,11 +69,26 @@
             <a href=""><img src={{ asset('bundles/adymamain/images/social/fb.png') }} alt="Facebook"></a>
             <a href=""><img src={{ asset('bundles/adymamain/images/social/gplus.png') }} alt="Google +"></a>
             <a href=""><img src={{ asset('bundles/adymamain/images/social/twitter.png') }} alt="Twitter"></a>
-            <a href=""><img src={{ asset('bundles/adymamain/images/gotop.png') }} alt="Twitter"></a>
+            <a class="scrollToTop" href=""><img src={{ asset('bundles/adymamain/images/gotop.png') }} alt="Go Top"></a>
         </div>
     </footer>
     <!--Analytics-->
     <script>
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 100) {
+                    $('.scrollToTop').fadeIn();
+                } else {
+                    $('.scrollToTop').fadeOut();
+                }
+            });
+            $('.scrollToTop').click(function(){
+                $('html, body').animate({scrollTop : 0},800);
+                return false;
+            });
+        });
     </script>
     {% block javascripts %}{% endblock %}
     </body>
