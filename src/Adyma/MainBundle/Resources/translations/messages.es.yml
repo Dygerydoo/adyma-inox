@@ -7,17 +7,29 @@ seo:
 menu:
     inicio: Adyma Inox
     hosteleria: Hosteleria
-    naval: Mobiliario naval
-    laboratorios: Mobiliario laboratorios
-    inoxdeco: Decoración Inoxidable
-    cerrajeria: Cerrajería
+    mobiliario: Mobiliario
+    naval: 'Naval'
+    laboratorios: 'Laboratorios'
+    cerrajeria: 'Decoración y cerrajeria en inoxidable'
     barbacoas: Barbacoas
-    kcone: KC-ONE
-    accesorioscocina: Accesorios de Cocina
+    kcone: 'KC-ONE'
+    accesorioscocina: 'Accesorios de Cocina'
+    cocktail: Coctelería
     contacto: Contacto
 
+submenu:
+    armarios: 'Armarios - Estanterias'
+    campanas: Campanas
+    carros: Carros
+    cuartosfrios: 'Cuartos fríos'
+    mesaslava: 'Mesas lavavajillas'
+    cafeteros: 'Cafeteros - Contrabarras'
+    mesastrabajo: 'Mesas trabajo'
+    complementos: Complementos
+    mesaslavado: 'Mesas lavado'
+
 indexsections:
-    somos: ¿Quiénes Somos?
+    somos: '¿Quiénes Somos?'
     description: 'Adyma inox es una empresa joven, creativa y dinámica,<br> formada por un equipo de profesionales con decadas de experiencia en el acero inoxidable.'
 
 menukcone:

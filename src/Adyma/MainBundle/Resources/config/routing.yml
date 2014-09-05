@@ -5,11 +5,11 @@ homepage:
         template: 'AdymaMainBundle:Default:index.html.twig'
         private: false
 
-hosteleria:
+hosteleriarm:
     path:     /hosteleria
     defaults:
         _controller: FrameworkBundle:Template:template
-        template: 'AdymaMainBundle:Default:hosteleria.html.twig'
+        template: 'AdymaMainBundle:Default:hosteleriarmariosyestanterias.html.twig'
         private: false
 
 kcone:

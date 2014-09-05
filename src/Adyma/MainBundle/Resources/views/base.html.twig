@@ -31,22 +31,53 @@
             <li>
                 <a href="{{ path('homepage') }}">{{ 'menu.inicio'|trans }}</a>
             </li>
-            <li>
-                <a href="{{ path('hosteleria') }}">{{ 'menu.hosteleria'|trans }}</a>
+            <li class="navliesp">
+                <a href="#">{{ 'menu.hosteleria'|trans }}</a>
+                 <ul class=" submenul nopadding">
+                    <li class="submenuli nofloat two">
+                        <a href="{{ path('hosteleriarm') }}">{{ 'submenu.armarios'|trans }}</a>
+                    </li>
+                    <li class="submenuli nofloat two">
+                        <a href="{{ path('kcone') }}">{{ 'submenu.campanas'|trans }}</a>
+                    </li>
+                    <li class="submenuli nofloat two">
+                        <a href="{{ path('kcone') }}">{{ 'submenu.carros'|trans }}</a>
+                    </li>
+                    <li class="submenuli nofloat two">
+                        <a href="{{ path('kcone') }}">{{ 'submenu.cuartosfrios'|trans }}</a>
+                    </li>
+                    <li class="submenuli nofloat two">
+                        <a href="{{ path('kcone') }}">{{ 'submenu.mesaslava'|trans }}</a>
+                    </li>
+                    <li class="submenuli nofloat two">
+                        <a href="{{ path('kcone') }}">{{ 'submenu.cafeteros'|trans }}</a>
+                    </li>
+                    <li class="submenuli nofloat two">
+                        <a href="{{ path('kcone') }}">{{ 'submenu.mesastrabajo'|trans }}</a>
+                    </li>
+                    <li class="submenuli nofloat two">
+                        <a href="{{ path('kcone') }}">{{ 'submenu.complementos'|trans }}</a>
+                    </li>
+                    <li class="submenuli nofloat two">
+                        <a href="{{ path('kcone') }}">{{ 'submenu.mesaslavado'|trans }}</a>
+                    </li>
+                </ul>
             </li>
-            <li>
-                <a href="{{ path('homepage') }}">{{ 'menu.naval'|trans }}</a>
-            </li>
-            <li>
-                <a href="{{ path('homepage') }}">{{ 'menu.laboratorios'|trans }}</a>
-            </li>
-            <li>
-                <a href="{{ path('homepage') }}">{{ 'menu.inoxdeco'|trans }}</a>
+            <li class="navliesp">
+                <a href="{{ path('hosteleriarm') }}">{{ 'menu.mobiliario'|trans }}</a>
+                 <ul class=" submenul nopadding">
+                    <li class="submenuli nofloat two">
+                        <a href="{{ path('kcone') }}">{{ 'menu.naval'|trans }}</a>
+                    </li>
+                    <li class="submenuli nofloat two">
+                        <a href="{{ path('kcone') }}">{{ 'menu.laboratorios'|trans }}</a>
+                    </li>
+                </ul>
             </li>
             <li>
                 <a href="{{ path('homepage') }}">{{ 'menu.cerrajeria'|trans }}</a>
             </li>
-            <li class="navliesp">
+            <li class="navliesp br">
                 <a href="{{ path('kcone') }}">{{ 'menu.barbacoas'|trans }}</a>
                 <ul>
                     <li class="navlisub">
@@ -56,6 +87,9 @@
             </li>
             <li>
                 <a href="{{ path('homepage') }}">{{ 'menu.accesorioscocina'|trans }}</a>
+            </li>
+            <li>
+                <a href="{{ path('homepage') }}">{{ 'menu.cocktail'|trans }}</a>
             </li>
             <li>
                 <a href="{{ path('homepage') }}">{{ 'menu.contacto'|trans }}</a>

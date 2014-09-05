@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(http://fonts.googleapis.com/css?family=Arimo:400,700);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
 html, html a {
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
@@ -11,6 +11,7 @@ nav{
     position:fixed;
     right:0;
     top:0;
+    z-index: 99999999;
 }
 nav ul{
     margin: 0;
@@ -31,7 +32,7 @@ nav li{
 nav li a{
     text-decoration: none;
     color: white;
-    font-family: 'Arimo';
+    font-family: 'Source Sans Pro';
     font-weight: 700;
 }
 .sc0{
@@ -42,11 +43,67 @@ nav li a{
     background: url('../../bundles/adymamain/images/kcone/viewsc1.png');
     background-size:cover;
 }
+.sc2{
+    background: url('../../bundles/adymamain/images/kcone/viewsc2.png');
+    background-size:cover;
+}
 .logosc0{
     display:block;
     margin:auto;
     position: relative;
     top: -21%;
+}
+.descriptioncontainer{
+    background: rgba(0, 0, 0, 0.45);
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.descriptioncontainer h3{
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 56px;
+    position: absolute;
+    left: 4%;
+    top: 5%;
+}
+.descriptioncontainer p{
+    position: absolute;
+    left: 5%;
+    top: 35%;
+    font-size: 23px;
+    width: 83%;
+    color: white;
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+}
+.descriptioncontainerleft{
+    background: rgba(0, 0, 0, 0);
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.descriptioncontainerleft h3{
+    color: #2e2e2e;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 56px;
+    position: absolute;
+    left: 4%;
+    top: 5%;
+}
+.descriptioncontainerleft p{
+    position: absolute;
+    left: 5%;
+    top: 35%;
+    font-size: 23px;
+    width: 83%;
+    color: #2e2e2e;
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
 }
 /**
  * fullPage 2.1.9
