@@ -1,10 +1,57 @@
-{% extends 'AdymaMainBundle::base.html.twig' %}
+{% extends 'AdymaMainBundle::section.html.twig' %}
 {% block title %} {{ 'seo.index.title'|trans }} {% endblock title %}
 {% block description %}{{ 'seo.index.description'|trans }}{% endblock description %}
 {% block keywords %}{{ 'seo.index.keywords'|trans }}{% endblock keywords %}
-{% block body %}
-<div class="headcontent">
+{% block headcontent %}
     <h3>Hostelería</h3>
     <p>Armarios - Estanterías</p>
-</div>
-{% endblock body %}
+{% endblock %}
+{% block undercontent %}
+    <div class="pleft">
+    <p>Los armarios y las estanterías son un complemento esencial en una cocina industrial.
+    <br><br>
+    <span class="bolduppercase">ADYMA-INOX</span> pone a su disposición una amplia gama de armarios y estanterias fabricadas en acero inoxidable.
+    <br><br>
+    Como todos los productos que salen de las instalaciones de Adyma se fabrícan a medida siguiendo sus indicaciones para completar su instalación.
+    <br><br>
+    Al estar fabricados integramente en acero inoxidable cumplen todos los requisitos sanitarios de higiene en el almacenamiento,
+    <br><br>
+    </div>
+
+    <div class="pright">
+        <h4>ESPACIO E HIGIENE</h4>
+        <p class="whitext">
+        Al estar fabricados a medida son ideales para completar la instalación de cocinas industriales, hoteles, restaurantes, colegios, hospitales, empresas de caterign, empresas manipuladoras de alimentos,
+        cafeterías y un largo etc...
+        </p>
+    </div>
+    <div class="minishow">
+        <p>Estos son algunos de los productos que le ayudarán a optimizar el espacio de sus instalaciones:</p>
+        <ul>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+        </ul>
+    </div>
+{% endblock %}

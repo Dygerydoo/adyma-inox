@@ -10,8 +10,12 @@ html, html a {
 .nopadding{
     padding:0;
 }
-.br{
-    border-right: 1px solid white;
+.bolduppercase{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.whitext{
+    color:white;
 }
 nav{
     width: 100%;
@@ -20,7 +24,7 @@ nav{
 nav ul{
     margin: 0 auto;
     list-style-type: none;
-    max-width: 1000px;
+    max-width: 860px;
     margin-top: 1%;
 }
 nav ul li{
@@ -29,7 +33,6 @@ nav ul li{
     padding-left: 7px;
     padding-right: 7px;
     border-left: 1px solid white;
-    text-align: center;
 }
 nav ul li a{
     color: white;
@@ -52,7 +55,7 @@ nav ul li a:hover{
     transition: all 0.3s linear;
 }
 .navliesp{
-    width: 6.4%;
+    width: 7.4%;
     height: 18px;
     overflow: hidden;
 }
@@ -60,24 +63,21 @@ nav ul li a:hover{
     overflow: initial;
     height: auto;
     padding-bottom: 8px;
-    border-bottom: 1px solid #fff;
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
 .submenul{
-    border-bottom: 1px solid white;
-    border-right: 1px solid white;
-    border-top: 1px solid white;
+    padding-bottom: 10px;
     width: 189px;
     margin-bottom: -9px;
-    margin-left: -7px;
 }
 .submenuli{
     margin-top: 15px;
     position: relative;
     border: none;
+    text-align: initial;
 }
 .submenuli a:hover{
     border: none;
@@ -85,15 +85,25 @@ nav ul li a:hover{
 .navlisub{
     margin-top: 15px;
     position: relative;
-    left: -40px;
+    left: -43px;
     border: none;
+    padding-right: 16px;
     width: 51px;
+    border-right: 1px solid white;
+}
+.navlisub:hover{
+    background: rgba(255, 255, 255, 0.32);
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
 }
 .two{
-    left:initial;
-    margin: 0;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    width: 155px;
+    border-left: none;
+    border-right: 1px solid white;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 .two:hover{
     background: rgba(255, 255, 255, 0.32);
@@ -342,9 +352,10 @@ footer p{
 }
 /*Secciones Interiores*/
 .headcontent{
-    background: black;
+    background: url('../images/sections/int/arm_head.png');
     width: 100%;
-    height: 340px;
+    height: 393px;
+    background-size:cover;
     position: absolute;
     top: 0;
     z-index: -1;
@@ -365,4 +376,69 @@ footer p{
     font-size: 14px;
     position: relative;
     top: 77px;
+}
+.undercontent{
+    margin-top: 31%;
+}
+.undercontent img{
+    width: 30%;
+    margin-top: 1.5%;
+    margin-left: 6%;
+    float: left;
+}
+.undercontent p{
+    margin-left: 5%;
+    font-size: 13px;
+    padding-bottom: 20px;
+    padding-right: 28px;
+}
+.pright{
+    background: #bfbfbf;
+    float: left;
+    margin-left: 2%;
+    width: 42%;
+}
+.pright p{
+    margin-top: -15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.pright h4{
+    font-family: 'Montserrat';
+    color: white;
+    font-size: 21px;
+    margin-left: 5%;
+}
+.pleft{
+    float:left;
+    width: 45%;
+    margin-right: 4.5%;
+    margin-left:2.5%;
+}
+.minishow{
+    width: 100%;
+    text-align: center;
+}
+.minishow p{
+    width: 100%;
+    text-align: center;
+    padding-top: 20%;
+    margin:0;
+}
+.minishow li{
+    float: left;
+    width: 150px;
+    height: 160px;
+    background: grey;
+    margin: 12px;
+    list-style-type: none;
+}
+.minishow ul{
+    display: block;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.descriptmini{
+    position: relative;
+    top:145px;
 }
