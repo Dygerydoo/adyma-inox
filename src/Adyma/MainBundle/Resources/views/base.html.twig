@@ -26,6 +26,7 @@
     {% block head %}{% endblock %}
 </head>
 <body>
+    <div class="bodywrapper">
     <nav>
         <ul>
             <li>
@@ -97,22 +98,23 @@
         </ul>
     </nav>
     {% block body %}{% endblock %}
+    </div>
     <footer>
         <p> {{ 'footer.direction'|trans }} | <a href="#infolegal">{{ 'footer.legal'|trans }}</a></p>
         <div class="socialfoo">
             <a href=""><img src={{ asset('bundles/adymamain/images/social/fb.png') }} alt="Facebook"></a>
             <a href=""><img src={{ asset('bundles/adymamain/images/social/gplus.png') }} alt="Google +"></a>
             <a href=""><img src={{ asset('bundles/adymamain/images/social/twitter.png') }} alt="Twitter"></a>
-            <a class="scrollToTop" href=""><img src={{ asset('bundles/adymamain/images/gotop.png') }} alt="Go Top"></a>
+            <!--<a class="scrollToTop" href=""><img src={{ asset('bundles/adymamain/images/gotop.png') }} alt="Go Top"></a>-->
         </div>
     </footer>
     <!--Analytics-->
     <script>
     </script>
-    <script>
+    <!--<script>
         $(document).ready(function(){
             $(window).scroll(function(){
-                if ($(this).scrollTop() > 100) {
+                if ($(this).scrollTop() > 0) {
                     $('.scrollToTop').fadeIn();
                 } else {
                     $('.scrollToTop').fadeOut();
@@ -123,7 +125,7 @@
                 return false;
             });
         });
-    </script>
+    </script>-->
     {% block javascripts %}{% endblock %}
     </body>
 </html>

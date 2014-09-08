@@ -6,11 +6,13 @@ homepage:
         private: false
 
 hosteleriarm:
-    path:     /hosteleria
+    path:     /hosteleria/armarios
     defaults:
         _controller: FrameworkBundle:Template:template
-        template: 'AdymaMainBundle:Default:hosteleriarmariosyestanterias.html.twig'
+        template: 'AdymaMainBundle:Default:hoste_sub1.html.twig'
         private: false
+
+
 
 kcone:
     path:     /barbacoas/one

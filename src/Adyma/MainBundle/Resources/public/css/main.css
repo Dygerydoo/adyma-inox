@@ -3,12 +3,16 @@
 html, html a {
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    height: 100%;
+}
+body{
+    height: 100%;
 }
 .nofloat{
     float:none;
 }
 .nopadding{
-    padding:0;
+    padding:0 !important;
 }
 .bolduppercase{
     font-weight: bold;
@@ -17,15 +21,20 @@ html, html a {
 .whitext{
     color:white;
 }
+.bodywrapper{
+    min-height: 100%;
+    margin-bottom: -10px;
+    height: 100%;
+    z-index: -1;
+    overflow: auto;
+}
 nav{
     width: 100%;
-    height: 60px;
 }
 nav ul{
     margin: 0 auto;
     list-style-type: none;
     max-width: 860px;
-    margin-top: 1%;
 }
 nav ul li{
     margin-top: 20px;
@@ -113,12 +122,12 @@ nav ul li a:hover{
     transition: all 0.3s linear;
 }
 footer{
-    position: absolute;
-    bottom: -1220px;
+    height: 30px;
     width: 100%;
     font-size: 12px;
     background: #111111;
     color: white;
+    margin-top: 25px;
     text-align: center;
 }
 footer a {
@@ -127,11 +136,12 @@ footer a {
 footer p{
     font-weight: bold;
     font-size: 10px;
+    padding-top: 8px;
 }
 .socialfoo{
     position: absolute;
     right: 70px;
-    top: -32px;
+    bottom: -35px;
     z-index: -1;
 }
 
@@ -143,17 +153,17 @@ footer p{
     background-image: url('../images/indexbg.jpg');
     width: 100%;
     height: 100%;
-    top: 0px;
-    position: absolute;
+    position: relative;
     z-index: -1;
     background-size: cover;
-    overflow: hidden;
 }
 .indexfirstview img{
-    display: block;
     margin: auto;
     width: 40%;
-    margin-top: 11%;
+    padding-top: 150px;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 .indexfirstview h3{
     text-align: center;
@@ -161,23 +171,21 @@ footer p{
     font-family: 'Montserrat';
     text-transform: uppercase;
     font-size:31px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 .indexsections {
-    position: absolute;
-    margin-top: 45.8%;
-    height: 1200px;
     width: 100%;
     background: white;
     z-index: -999;
 }
 .indexsectionsh3{
-    position: relative;
-    top: 64px;
     text-align: center;
     font-size: 30px;
     color: #2e2e2e;
     font-family: 'Montserrat';
-    margin: 0;
     text-transform: uppercase;
 }
 .indexsectionsp{
@@ -189,8 +197,6 @@ footer p{
     background: black;
     font-family: 'Montserrat';
     height: 90px;
-    position: relative;
-    top: 66px;
     text-align: center;
 }
 /* Secciones Index */
@@ -356,9 +362,8 @@ footer p{
     width: 100%;
     height: 393px;
     background-size:cover;
-    position: absolute;
-    top: 0;
     z-index: -1;
+    position:relative;
 }
 .headcontent h3{
     color: white;
@@ -366,19 +371,23 @@ footer p{
     font-size: 48px;
     text-transform: uppercase;
     text-align: center;
-    position: relative;
+    position: absolute;
     top: 113px;
+    left: 0;
+    right: 0;
 }
 .headcontent p{
     color: white;
     font-family: sans-serif;
     text-align: center;
     font-size: 14px;
-    position: relative;
-    top: 77px;
+    position: absolute;
+    top: 215px;
+    left: 0;
+    right: 0;
 }
 .undercontent{
-    margin-top: 31%;
+    margin-top: 7%;
 }
 .undercontent img{
     width: 30%;
@@ -394,7 +403,7 @@ footer p{
 }
 .pright{
     background: #bfbfbf;
-    float: left;
+    display:inline-block;
     margin-left: 2%;
     width: 42%;
 }
@@ -410,7 +419,8 @@ footer p{
     margin-left: 5%;
 }
 .pleft{
-    float:left;
+    display:inline-block;
+    vertical-align: top;
     width: 45%;
     margin-right: 4.5%;
     margin-left:2.5%;
@@ -418,6 +428,7 @@ footer p{
 .minishow{
     width: 100%;
     text-align: center;
+    margin-top: 6%;
 }
 .minishow p{
     width: 100%;
