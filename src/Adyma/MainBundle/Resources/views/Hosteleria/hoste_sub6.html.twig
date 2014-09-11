@@ -1,0 +1,57 @@
+{% extends 'AdymaMainBundle::section.html.twig' %}
+{% block title %} {{ 'seo.index.title'|trans }} {% endblock title %}
+{% block description %}{{ 'seo.index.description'|trans }}{% endblock description %}
+{% block keywords %}{{ 'seo.index.keywords'|trans }}{% endblock keywords %}
+{% block headcontent %}
+    <img src={{ asset('bundles/adymamain/images/sections/int/cafe_head.png') }}>
+    <h3>Hostelería</h3>
+    <p>Cafeteros - Contrabarras</p>
+{% endblock %}
+{% block undercontent %}
+    <div class="pleft">
+    <p><span class="bolduppercase">ADYMA-INOX</span> pone a su disposición toda su experiencia en el sector de la hostelería en sus muebles cafeteros y muebles contrabarras.
+    <br><br>
+    Nuestros muebles son fabricados integramente en acero inoxidable. Se fabrican a medida, acoplandonos a las características de su instalación.
+    <br><br>
+    Tolvas para posos de café extraible, cajones con guías de rodamientos, puertas abatibles o correderas, estantes... Son algunos de los componentes de nuestros muebles.
+    <br><br>
+    </p>
+    </div>
+
+    <div class="pright">
+        <h4>A MEDIDA</h4>
+        <p class="whitext">
+        Al estar fabricados a medida son ideales para completar la instalación de cocinas industriales, hoteles, restaurantes, colegios, hospitales, empresas de caterign, empresas manipuladoras de alimentos,
+        cafeterías y un largo etc...
+        </p>
+    </div>
+    <div class="minishow">
+        <p class="nopadding">Estos son algunos de los productos que le ayudarán a optimizar el espacio de sus instalaciones:</p>
+        <ul>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+        </ul>
+    </div>
+{% endblock %}

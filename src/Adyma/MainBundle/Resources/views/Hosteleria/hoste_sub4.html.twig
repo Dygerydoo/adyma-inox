@@ -1,0 +1,58 @@
+{% extends 'AdymaMainBundle::section.html.twig' %}
+{% block title %} {{ 'seo.index.title'|trans }} {% endblock title %}
+{% block description %}{{ 'seo.index.description'|trans }}{% endblock description %}
+{% block keywords %}{{ 'seo.index.keywords'|trans }}{% endblock keywords %}
+{% block headcontent %}
+    <img src={{ asset('bundles/adymamain/images/sections/int/cf_head.png') }}>
+    <h3>Hostelería</h3>
+    <p>Cuartos fríos</p>
+{% endblock %}
+{% block undercontent %}
+    <div class="pleft">
+    <p>En <span class="bolduppercase">ADYMA-INOX</span> fabricamos bajo demanda una amplia gama de muebles en Acero Inoxidable a medida, para la manipulación de productos alimenticios.
+    <br><br>
+    Nuestros productos se fabrican integramente en acero inoxidable y a medida por lo que nos adaptamos a las necesidades de sus proyectos e instalaciones.
+    <br><br>
+    Debido al sistema de producción empleado por <span class="bolduppercase">ADYMA-INOX</span>, nuestros productos están especialmente pensados para su instalación en cuartos fríos.
+    <br><br>
+    Al estar fabricados integramente en acero inoxidable cumplen todos los requisitos sanitarios de higiene en el almacenamiento,
+    <br><br>
+    </div>
+
+    <div class="pright">
+        <h4>HIGIENE Y SEGURIDAD</h4>
+        <p class="whitext">
+        Fabricamos los muebles a medida, totalmente en acero inoxidable, no usamos madera ni componentes melamínicos, por lo que conseguimos una higiene y seguridad alimenticia absoluta.
+        Al ser fabricadas a medida son ideales para completar la instalación de cocinas industriales, hoteles, restaurantes, etc.
+        </p>
+    </div>
+    <div class="minishow">
+        <p class="nopadding">Estos son algunos de los productos que le ayudarán a optimizar el espacio de sus instalaciones:</p>
+        <ul>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+        </ul>
+    </div>
+{% endblock %}

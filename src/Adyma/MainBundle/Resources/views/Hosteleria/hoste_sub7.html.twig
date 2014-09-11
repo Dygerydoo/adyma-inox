@@ -1,0 +1,54 @@
+{% extends 'AdymaMainBundle::section.html.twig' %}
+{% block title %} {{ 'seo.index.title'|trans }} {% endblock title %}
+{% block description %}{{ 'seo.index.description'|trans }}{% endblock description %}
+{% block keywords %}{{ 'seo.index.keywords'|trans }}{% endblock keywords %}
+{% block headcontent %}
+    <img src={{ asset('bundles/adymamain/images/sections/int/mtra_head.png') }}>
+    <h3>Hostelería</h3>
+    <p>Mesas de trabajo</p>
+{% endblock %}
+{% block undercontent %}
+    <div class="pleft">
+    <p> En <span class="bolduppercase">ADYMA-INOX</span> fabricamos bajo demanda una amplia gama de mesas de trabajo en acero inoxidable a medida para la manipulación de productos alimenticios.
+    <br><br>
+    Nuestras mesas de trabajo se fabrican integramente en acero inoxidable. Se fabrican a medida por lo que nos adaptamos a las necesidades de sus proyectos e instalaciones.
+    <br><br>
+    </p>
+    </div>
+
+    <div class="pright">
+        <h4>ROBUSTEZ Y CALIDAD</h4>
+        <p class="whitext">
+        Debido al sistema de producción empleado por ADYMA-INOX, hemos conseguido unas mesas de trabajo robustas, higiénicas y perfectamente combinables con cualquier producto del cliente.
+        </p>
+    </div>
+    <div class="minishow">
+        <p class="nopadding">Estos son algunos de los productos que le ayudarán a optimizar el espacio de sus instalaciones:</p>
+        <ul>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+        </ul>
+    </div>
+{% endblock %}

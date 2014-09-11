@@ -5,14 +5,117 @@ homepage:
         template: 'AdymaMainBundle:Default:index.html.twig'
         private: false
 
-hosteleriarm:
-    path:     /hosteleria/armarios
+armarios:
+    path:     /hosteleria/armarios-y-estanterias
     defaults:
         _controller: FrameworkBundle:Template:template
-        template: 'AdymaMainBundle:Default:hoste_sub1.html.twig'
+        template: 'AdymaMainBundle:Hosteleria:hoste_sub1.html.twig'
         private: false
 
+campanas:
+    path:     /hosteleria/campanas
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'AdymaMainBundle:Hosteleria:hoste_sub2.html.twig'
+        private: false
 
+carros:
+    path:     /hosteleria/carros
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'AdymaMainBundle:Hosteleria:hoste_sub3.html.twig'
+        private: false
+
+cuartosfrios:
+    path:     /hosteleria/cuartos-frios
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'AdymaMainBundle:Hosteleria:hoste_sub4.html.twig'
+        private: false
+
+lavavajillas:
+    path:     /hosteleria/mesas-lavavajillas
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'AdymaMainBundle:Hosteleria:hoste_sub5.html.twig'
+        private: false
+
+cafeteros:
+    path:     /hosteleria/contrabarras-y-cafeteros
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'AdymaMainBundle:Hosteleria:hoste_sub6.html.twig'
+        private: false
+
+mesastrabajo:
+    path:     /hosteleria/mesas-trabajo
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'AdymaMainBundle:Hosteleria:hoste_sub7.html.twig'
+        private: false
+
+complementos:
+    path:     /hosteleria/complementos
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'AdymaMainBundle:Hosteleria:hoste_sub8.html.twig'
+        private: false
+
+mesaslavado:
+    path:     /hosteleria/mesas-lavado
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'AdymaMainBundle:Hosteleria:hoste_sub9.html.twig'
+        private: false
+
+naval:
+    path:     /mobiliario/naval
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'AdymaMainBundle:Mobiliario:naval.html.twig'
+        private: false
+
+laboratorio:
+    path:     /mobiliario/laboratorio
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'AdymaMainBundle:Mobiliario:laboratorios.html.twig'
+        private: false
+
+cerrajeria:
+    path:     /cerrajeria-y-decoracion
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'AdymaMainBundle:Default:cerrajeria.html.twig'
+        private: false
+
+barbacoas:
+    path:     /barbacoas
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'AdymaMainBundle:Default:barbacoas.html.twig'
+        private: false
+
+accocina:
+    path:     /accesorios-cocina
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'AdymaMainBundle:Default:barbacoas.html.twig'
+        private: false
+
+cocteleria:
+    path:     /cocteleria
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'AdymaMainBundle:Default:cocteleria.html.twig'
+        private: false
+
+contacto:
+    path:     /contacto
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template: 'AdymaMainBundle:Default:contacto.html.twig'
+        private: false
 
 kcone:
     path:     /barbacoas/one

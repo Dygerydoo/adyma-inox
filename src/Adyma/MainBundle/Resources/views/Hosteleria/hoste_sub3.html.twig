@@ -1,0 +1,57 @@
+{% extends 'AdymaMainBundle::section.html.twig' %}
+{% block title %} {{ 'seo.index.title'|trans }} {% endblock title %}
+{% block description %}{{ 'seo.index.description'|trans }}{% endblock description %}
+{% block keywords %}{{ 'seo.index.keywords'|trans }}{% endblock keywords %}
+{% block headcontent %}
+    <img src={{ asset('bundles/adymamain/images/sections/int/carr_head.png') }}>
+    <h3>Hostelería</h3>
+    <p>Carros</p>
+{% endblock %}
+{% block undercontent %}
+    <div class="pleft">
+    <p>La gama de carros en <span class="bolduppercase">ADYMA-INOX</span> permite combinar la optimización del espacio garantizando una rentabilidad inmejorable en el uso diario y en la amortización de su inversión.
+    <br><br>
+    Los carros para hostelería de <span class="bolduppercase">ADYMA-INOX</span> se construyen integramente en acero inoxidable.
+    <br><br>
+    Los carros para vajilla tienen los estantes reforzados, permitiendo un uso prolongado de los mismos.
+    <br><br>
+    </p>
+    </div>
+
+    <div class="pright">
+        <h4>POSIBILIDADES VARIADAS</h4>
+        <p class="whitext">
+        <span class="bolduppercase">ADYMA-INOX</span> le ofrece la posibilidad de decorar los carros que se utilízan en el comedor.
+        A su vez disponemos de una amplia gama de carros para cubrir todas las necesidades de su negocio.
+        </p>
+    </div>
+    <div class="minishow">
+        <p class="nopadding">Estos son algunos de los productos que le ayudarán a optimizar el espacio de sus instalaciones:</p>
+        <ul>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+        </ul>
+    </div>
+{% endblock %}

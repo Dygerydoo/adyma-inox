@@ -1,0 +1,55 @@
+{% extends 'AdymaMainBundle::section.html.twig' %}
+{% block title %} {{ 'seo.index.title'|trans }} {% endblock title %}
+{% block description %}{{ 'seo.index.description'|trans }}{% endblock description %}
+{% block keywords %}{{ 'seo.index.keywords'|trans }}{% endblock keywords %}
+{% block headcontent %}
+    <img src={{ asset('bundles/adymamain/images/sections/int/mlavdo_head.png') }}>
+    <h3>Hostelería</h3>
+    <p>Mesas de Lavado</p>
+{% endblock %}
+{% block undercontent %}
+<div class="pleft">
+    <p><span class="bolduppercase">ADYMA-INOX</span> pone a su disposición la gama más amplia del mercado en mesas de lavado.
+    <br><br>
+    Nuestras mesas de lavado se fabrican a medida, integramente en acero inoxidable.
+    <br><br>
+    Nos ceñimos a las necesidades de su instalación ofreciendoles una amplia gama de cubetas soldadas, fregaderos, bastidores, mesas de entrega de sucio, etc...
+    </p>
+    </div>
+    <div class="pright">
+        <h4>HIGIENE Y ADAPTABILIDAD</h4>
+        <p class="whitext">
+        Al estar fabricados a medida son ideales para completar la instalación de cocinas industriales, hoteles, restaurantes, colegios, hospitales, empresas de caterign, empresas manipuladoras de alimentos,
+        cafeterías y un largo etc...
+        </p>
+    </div>
+    <div class="minishow">
+        <p class="nopadding">Estos son algunos de los productos que le ayudarán a optimizar el espacio de sus instalaciones:</p>
+        <ul>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+            <li>
+                <img src="" alt="">
+                <p class="descriptmini">Texto de Prueba</p>
+            </li>
+        </ul>
+    </div>
+{% endblock %}
