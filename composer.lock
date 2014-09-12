@@ -947,12 +947,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/JMSTranslationBundle.git",
-                "reference": "1c41baf3a0b8c6f0f3a3894c1adc0648ea651bc0"
+                "reference": "aa1cc4797997a30d4fdc55eb1f6042965b4b823f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/JMSTranslationBundle/zipball/1c41baf3a0b8c6f0f3a3894c1adc0648ea651bc0",
-                "reference": "1c41baf3a0b8c6f0f3a3894c1adc0648ea651bc0",
+                "url": "https://api.github.com/repos/schmittjoh/JMSTranslationBundle/zipball/aa1cc4797997a30d4fdc55eb1f6042965b4b823f",
+                "reference": "aa1cc4797997a30d4fdc55eb1f6042965b4b823f",
                 "shasum": ""
             },
             "require": {
@@ -994,10 +994,8 @@
             ],
             "authors": [
                 {
-                    "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
-                    "role": "Developer of wrapped JMSSerializerBundle"
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com"
                 }
             ],
             "description": "Puts the Symfony2 Translation Component on steroids",
@@ -1012,7 +1010,7 @@
                 "ui",
                 "webinterface"
             ],
-            "time": "2014-02-17 15:05:26"
+            "time": "2014-09-09 15:47:55"
         },
         {
             "name": "kriswallsmith/assetic",
