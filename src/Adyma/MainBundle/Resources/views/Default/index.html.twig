@@ -18,8 +18,20 @@
                 <li class="teaminfo">
                     <div id="slidemg1" class="slidemg">
                         <h4>Descripción</h4>
-                        <p>En está sección esta una selecta recopilación de algunos de nuestros trabajos.</p>
-                        <a href="/portfolio/general">Haz click aquí para saber más</a>
+                        <p>Haz click en los enlaces para ver más de nuestra gama de productos de hostelería:</p>
+                        <ul>
+                            <li><a href="{{ path('armarios') }}">Armarios</a></li>
+                            <li><a href="{{ path('campanas') }}">Campanas</a></li>
+                            <li><a href="{{ path('carros') }}">Carros</a></li>
+                            <li><a href="{{ path('cuartosfrios') }}">Cuartos fríos</a></li>
+                            <li><a href="{{ path('lavavajillas') }}">Mesas Lavavajillas</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="{{ path('cafeteros') }}">Cafeteros-Contrabarras</a></li>
+                            <li><a href="{{ path('mesastrabajo') }}">Mesas de trabajo</a></li>
+                            <li><a href="{{ path('complementos') }}">Complementos</a></li>
+                            <li><a href="{{ path('mesaslavado') }}">Mesas de lavado</a></li>
+                        </ul>
                     </div>
                     <a href="/portfolio/general">
                         <img src={{ asset('bundles/adymamain/images/sections/hosteleria.jpg') }}>
@@ -33,60 +45,70 @@
                 <li class="teaminfo">
                     <div id="slidemg2" class="slidemg">
                         <h4>Descripción</h4>
-                        <p>En está sección esta una selecta recopilación de algunos de nuestros trabajos.</p>
-                        <a href="/portfolio/general">Haz click aquí para saber más</a>
+                        <p>Haz click en los enlaces para ver más de nuestra gama de productos de mobiliario:</p>
+                        <ul>
+                            <li><a href="{{ path('naval') }}">Naval</a></li>
+                            <li><a href="{{ path('laboratorio') }}">Laboratorios.</a></li>
+                        </ul>
                     </div>
-                    <a href="/portfolio/general">
-                        <img src={{ asset('bundles/adymamain/images/sections/hosteleria.jpg') }}>
+                    <a href="{{ path('laboratorio') }}">
+                        <img src={{ asset('bundles/adymamain/images/sections/mobiliario.jpg') }}>
                     </a>
                     <div class="teamdescription">
-                        <h3>Hostelería</h3>
-                        <p>Instalación y equipamiento de una cocina industrial.</p>
+                        <h3>Mobiliario</h3>
+                        <p>Instalación y equipamiento naval y de laboratorios.</p>
                         <img class="arrow trigger" data-id="slidemg2" src={{ asset('bundles/adymamain/images/expand_arrow.png') }}>
                     </div>
                 </li>
                 <li class="teaminfo">
                     <div id="slidemg3" class="slidemg">
                         <h4>Descripción</h4>
-                        <p>En está sección esta una selecta recopilación de algunos de nuestros trabajos.</p>
-                        <a href="/portfolio/general">Haz click aquí para saber más</a>
+                        <p>Haz click en los enlaces para ver más de nuestra gama de productos de cerrajeria y decoración:</p>
+                        <ul>
+                            <li><a href="{{ path('cerrajeria') }}">Decoración y Cerrajeria</a></li>
+                        </ul>
                     </div>
-                    <a href="/portfolio/general">
-                        <img src={{ asset('bundles/adymamain/images/sections/hosteleria.jpg') }}>
+                    <a href="{{ path('cerrajeria') }}">
+                        <img src={{ asset('bundles/adymamain/images/sections/cerrajeria.jpg') }}>
                     </a>
                     <div class="teamdescription">
-                        <h3>Hostelería</h3>
-                        <p>Instalación y equipamiento de una cocina industrial.</p>
+                        <h3>Decoración y Cerrajería en Inoxidable</h3>
+                        <p>Pasamanos, Barandillas, Puertas, Escaparates, Carteles, Cerramientos...</p>
                         <img class="arrow trigger" data-id="slidemg3" src={{ asset('bundles/adymamain/images/expand_arrow.png') }}>
                     </div>
                 </li>
                 <li class="teaminfo">
                     <div id="slidemg4" class="slidemg">
                         <h4>Descripción</h4>
-                        <p>En está sección esta una selecta recopilación de algunos de nuestros trabajos.</p>
-                        <a href="/portfolio/general">Haz click aquí para saber más</a>
+                        <p>Haz click en los enlaces para ver más de nuestra gama de productos de cocina:</p>
+                        <ul>
+                            <li><a href="{{ path('accocina') }}">Accesorios de Cocina</a></li>
+                        </ul>
                     </div>
-                    <a href="/portfolio/general">
-                        <img src={{ asset('bundles/adymamain/images/sections/hosteleria.jpg') }}>
+                    <a href="{{ path('accocina') }}">
+                        <img src={{ asset('bundles/adymamain/images/sections/cocina.jpg') }}>
                     </a>
                     <div class="teamdescription">
-                        <h3>Hostelería</h3>
-                        <p>Instalación y equipamiento de una cocina industrial.</p>
+                        <h3>Accesorios Cocina</h3>
+                        <p>Instalación y equipamiento de una cocina doméstica.</p>
                         <img class="arrow trigger" data-id="slidemg4" src={{ asset('bundles/adymamain/images/expand_arrow.png') }}>
                     </div>
                 </li>
                 <li class="teaminfo">
                     <div id="slidemg5" class="slidemg">
                         <h4>Descripción</h4>
-                        <p>En está sección esta una selecta recopilación de algunos de nuestros trabajos.</p>
-                        <a href="/portfolio/general">Haz click aquí para saber más</a>
+                        <p>Haz click en los enlaces para ver más de nuestra gama de barbacoas:</p>
+                        <ul>
+                            <li><a href="{{ path('barbacoas') }}">Barbacoas</a></li>
+                            <li><a href="{{ path('kcone') }}">KC-ONE</a></li>
+                        </ul>
                     </div>
-                    <a href="/portfolio/general">
-                        <img src={{ asset('bundles/adymamain/images/sections/hosteleria.jpg') }}>
+                    <a href="{{ path('barbacoas') }}">
+                        <img src={{ asset('bundles/adymamain/images/sections/barbacoas.jpg') }}>
                     </a>
                     <div class="teamdescription">
-                        <h3>Hostelería</h3>
-                        <p>Instalación y equipamiento de una cocina industrial.</p>
+                        <h3>Barbacoas</h3>
+                        <p>Barbacoas portátiles y fijas, para interior y exterior.</p>
                         <img class="arrow trigger" data-id="slidemg5" src={{ asset('bundles/adymamain/images/expand_arrow.png') }}>
                     </div>
                 </li>
@@ -94,13 +116,15 @@
                     <div id="slidemg6" class="slidemg">
                         <h4>Descripción</h4>
                         <p>En está sección esta una selecta recopilación de algunos de nuestros trabajos.</p>
-                        <a href="/portfolio/general">Haz click aquí para saber más</a>
+                        <ul>
+                            <li><a href="{{ path('cocteleria') }}">Coctelería</a></li>
+                        </ul>
                     </div>
-                    <a href="/portfolio/general">
+                    <a href="{{ path('cocteleria') }}">
                         <img src={{ asset('bundles/adymamain/images/sections/hosteleria.jpg') }}>
                     </a>
                     <div class="teamdescription">
-                        <h3>Hostelería</h3>
+                        <h3>Coctelería</h3>
                         <p>Instalación y equipamiento de una cocina industrial.</p>
                         <img class="arrow trigger" data-id="slidemg6" src={{ asset('bundles/adymamain/images/expand_arrow.png') }}>
                     </div>

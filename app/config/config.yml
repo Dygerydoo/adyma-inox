@@ -68,6 +68,19 @@ swiftmailer:
     password:  "%mailer_password%"
     spool:     { type: memory }
 
+#liipImagineBundle
+liip_imagine:
+    resolvers:
+       default:
+          web_path: ~
+
+    filter_sets:
+        cache: ~
+        profile:
+            quality: 75
+            filters:
+                thumbnail: { size: [150, 150], mode: outbound }
+
 # JMS Translation Bundle
 jms_translation:
     configs:

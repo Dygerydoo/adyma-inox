@@ -298,12 +298,17 @@ footer p{
 .slidemg{
     position: absolute;
     width:310px;
-    height:220px;
+    height:221px;
     background: white;
     right:-310px;
     text-align: left;
     color:#2e2e2e;
     font-size:12px;
+}
+.slidemgin ul{
+    padding-left:20px;
+    float:left;
+    list-style-type: none;
 }
 .slidemgin{
     right:0;
@@ -337,13 +342,11 @@ footer p{
     padding-right:10px;
 }
 .slidemg a{
-    margin-left:20px;
     text-decoration:none;
     font-weight:bold;
     color:#2e2e2e;
 }
 .slidemgin a{
-    margin-left:20px;
     text-decoration:none;
     font-weight:bold;
     color:#2e2e2e;
@@ -446,8 +449,7 @@ footer p{
 .minishow li{
     float: left;
     width: 150px;
-    height: 160px;
-    background: grey;
+    height: 150px;
     margin: 12px;
     list-style-type: none;
 }

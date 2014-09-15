@@ -100,7 +100,7 @@ accocina:
     path:     /accesorios-cocina
     defaults:
         _controller: FrameworkBundle:Template:template
-        template: 'AdymaMainBundle:Default:barbacoas.html.twig'
+        template: 'AdymaMainBundle:Default:acc_cocina.html.twig'
         private: false
 
 cocteleria:
