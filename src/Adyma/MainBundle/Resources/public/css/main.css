@@ -400,7 +400,6 @@ footer p{
     background: white;
 }
 .undercontent img{
-    width: 30%;
     margin-top: 1.5%;
     margin-left: 6%;
     float: left;
@@ -457,8 +456,6 @@ footer p{
     display: block;
     max-width: 1080px;
     margin: 0 auto;
-}
-.descriptmini{
-    position: relative;
-    top:145px;
+    background: white;
+    height: 220px;
 }

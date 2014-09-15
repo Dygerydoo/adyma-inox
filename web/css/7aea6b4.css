@@ -3,26 +3,38 @@
 html, html a {
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    height: 100%;
+}
+body{
+    height: 100%;
 }
 .nofloat{
     float:none;
 }
 .nopadding{
-    padding:0;
+    padding:0 !important;
 }
 .bolduppercase{
     font-weight: bold;
     text-transform: uppercase;
 }
+.whitext{
+    color:white;
+}
+.bodywrapper{
+    min-height: 100%;
+    margin-bottom: -10px;
+    height: 100%;
+    z-index: -1;
+    overflow: auto;
+}
 nav{
     width: 100%;
-    height: 60px;
 }
 nav ul{
     margin: 0 auto;
     list-style-type: none;
-    max-width: 1000px;
-    margin-top: 1%;
+    max-width: 860px;
 }
 nav ul li{
     margin-top: 20px;
@@ -52,7 +64,7 @@ nav ul li a:hover{
     transition: all 0.3s linear;
 }
 .navliesp{
-    width: 6.4%;
+    width: 7.4%;
     height: 18px;
     overflow: hidden;
 }
@@ -110,12 +122,12 @@ nav ul li a:hover{
     transition: all 0.3s linear;
 }
 footer{
-    position: absolute;
-    bottom: -1220px;
+    height: 30px;
     width: 100%;
     font-size: 12px;
     background: #111111;
     color: white;
+    margin-top: 25px;
     text-align: center;
 }
 footer a {
@@ -124,11 +136,12 @@ footer a {
 footer p{
     font-weight: bold;
     font-size: 10px;
+    padding-top: 8px;
 }
 .socialfoo{
     position: absolute;
     right: 70px;
-    top: -32px;
+    bottom: -35px;
     z-index: -1;
 }
 
@@ -140,17 +153,17 @@ footer p{
     background-image: url('../../bundles/adymamain/images/indexbg.jpg');
     width: 100%;
     height: 100%;
-    top: 0px;
-    position: absolute;
+    position: relative;
     z-index: -1;
     background-size: cover;
-    overflow: hidden;
 }
 .indexfirstview img{
-    display: block;
     margin: auto;
     width: 40%;
-    margin-top: 11%;
+    padding-top: 150px;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 .indexfirstview h3{
     text-align: center;
@@ -158,23 +171,21 @@ footer p{
     font-family: 'Montserrat';
     text-transform: uppercase;
     font-size:31px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 .indexsections {
-    position: absolute;
-    margin-top: 45.8%;
-    height: 1200px;
     width: 100%;
     background: white;
     z-index: -999;
 }
 .indexsectionsh3{
-    position: relative;
-    top: 64px;
     text-align: center;
     font-size: 30px;
     color: #2e2e2e;
     font-family: 'Montserrat';
-    margin: 0;
     text-transform: uppercase;
 }
 .indexsectionsp{
@@ -186,8 +197,6 @@ footer p{
     background: black;
     font-family: 'Montserrat';
     height: 90px;
-    position: relative;
-    top: 66px;
     text-align: center;
 }
 /* Secciones Index */
@@ -289,12 +298,17 @@ footer p{
 .slidemg{
     position: absolute;
     width:310px;
-    height:220px;
+    height:221px;
     background: white;
     right:-310px;
     text-align: left;
     color:#2e2e2e;
     font-size:12px;
+}
+.slidemgin ul{
+    padding-left:20px;
+    float:left;
+    list-style-type: none;
 }
 .slidemgin{
     right:0;
@@ -328,13 +342,11 @@ footer p{
     padding-right:10px;
 }
 .slidemg a{
-    margin-left:20px;
     text-decoration:none;
     font-weight:bold;
     color:#2e2e2e;
 }
 .slidemgin a{
-    margin-left:20px;
     text-decoration:none;
     font-weight:bold;
     color:#2e2e2e;
@@ -349,13 +361,17 @@ footer p{
 }
 /*Secciones Interiores*/
 .headcontent{
-    background: url('../../bundles/adymamain/images/sections/int/arm_head.png');
     width: 100%;
     height: 393px;
-    background-size:cover;
-    position: absolute;
-    top: 0;
     z-index: -1;
+    position: absolute;
+    top: 0px;
+    overflow: hidden;
+}
+.headcontent img{
+    width: 100%;
+    position: absolute;
+    top:0px;
 }
 .headcontent h3{
     color: white;
@@ -363,19 +379,25 @@ footer p{
     font-size: 48px;
     text-transform: uppercase;
     text-align: center;
-    position: relative;
+    position: absolute;
     top: 113px;
+    left: 0;
+    right: 0;
 }
 .headcontent p{
     color: white;
     font-family: sans-serif;
     text-align: center;
     font-size: 14px;
-    position: relative;
-    top: 77px;
+    position: absolute;
+    top: 215px;
+    left: 0;
+    right: 0;
 }
 .undercontent{
     margin-top: 29%;
+    padding-top: 7%;
+    background: white;
 }
 .undercontent img{
     width: 30%;
@@ -384,18 +406,62 @@ footer p{
     float: left;
 }
 .undercontent p{
-    width: 33%;
-    margin-left: 4%;
-    float: left;
+    margin-left: 5%;
     font-size: 13px;
+    padding-bottom: 20px;
+    padding-right: 28px;
 }
 .pright{
-
+    background: #bfbfbf;
+    display:inline-block;
+    margin-left: 2%;
+    width: 42%;
+}
+.pright p{
+    margin-top: -15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.pright h4{
+    font-family: 'Montserrat';
+    color: white;
+    font-size: 21px;
+    margin-left: 5%;
 }
 .pleft{
-    background:#bfbfbf;
+    display:inline-block;
+    vertical-align: top;
+    width: 45%;
+    margin-right: 4.5%;
+    margin-left:2.5%;
 }
-
+.minishow{
+    width: 100%;
+    text-align: center;
+    margin-top: 6%;
+}
+.minishow p{
+    width: 100%;
+    text-align: center;
+    padding-top: 20%;
+    margin:0;
+}
+.minishow li{
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin: 12px;
+    list-style-type: none;
+}
+.minishow ul{
+    display: block;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.descriptmini{
+    position: relative;
+    top:145px;
+}
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 
 /**
