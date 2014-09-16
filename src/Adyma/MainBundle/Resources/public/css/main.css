@@ -513,3 +513,15 @@ footer p{
     font-size: 14px;
     background: rgba(0, 0, 0, 0.76);
 }
+
+@media (min-width:1600px){
+    .teamcontainer{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .undercontent {
+        margin-top: 21%;
+        padding-top: 2%;
+        background: white;
+    }
+}
