@@ -514,7 +514,7 @@ footer p{
     background: rgba(0, 0, 0, 0.76);
 }
 
-@media (min-width:1600px){
+@media (min-width:1700px){
     .teamcontainer{
         max-width: 1200px;
         margin: 0 auto;
