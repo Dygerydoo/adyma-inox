@@ -12,3 +12,10 @@ $(document).ready(function () {
         $(event.target).toggleClass('arrowhover');
         });
     });
+
+// Pop-up legal info
+$(document).ready(function () {
+    $(".infl").on("click", function(){
+        $('.infls').toggleClass('showinfl');
+    });
+});

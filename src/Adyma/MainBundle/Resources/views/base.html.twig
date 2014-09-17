@@ -26,6 +26,17 @@
     {% block head %}{% endblock %}
 </head>
 <body>
+    <div id="infolegal" class="infls">
+        <div>
+            <p>Razón social:<br> Acero Diseño y Manufactura S.l</p>
+            <p>Dirección social:<br> C/ Calderers 56 Poligono del mar</p>
+            <p>Tel.:<br> 961861241</p>
+            <p>Forma jurídica: <br> Sociedad Limitada Laboral</p>
+            <p>Capital:…</p>
+            <p>C.I.F.:<br> B-98148182</p>
+            <p>Director/es:<br> Antonio Casero Corcoles, Antonio Fuentes Romero, Jose Fco Muñoz Carrasco</p>
+        </div>
+    </div>
     <div class="bodywrapper">
     <nav>
         <ul>
@@ -100,7 +111,7 @@
     {% block body %}{% endblock %}
     </div>
     <footer>
-        <p> {{ 'footer.direction'|trans }} | <a href="#infolegal">{{ 'footer.legal'|trans }}</a></p>
+        <p> {{ 'footer.direction'|trans }} | <a class="infl" href="#">{{ 'footer.legal'|trans }}</a></p>
         <div class="socialfoo">
             <a href=""><img src={{ asset('bundles/adymamain/images/social/fb.png') }} alt="Facebook"></a>
             <a href=""><img src={{ asset('bundles/adymamain/images/social/gplus.png') }} alt="Google +"></a>
