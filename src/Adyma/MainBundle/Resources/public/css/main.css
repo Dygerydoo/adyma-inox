@@ -87,6 +87,9 @@ nav ul li a:hover{
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
+.menunavtrigger{
+    display:none;
+}
 .navliesp{
     width: 7.4%;
     height: 18px;
