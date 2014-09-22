@@ -8,14 +8,9 @@
     <p></p>
 {% endblock %}
 {% block undercontent %}
-<form class="contactform" action="/php/enviar.php" method="post">
-    <input id="apellido" type="text" name="apellido" placeholder="Apellidos"/><br>
-    <input id="nombre" type="text" name="nombre" placeholder="Nombre" required="" /><br>
-    <input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required="" /><br>
-    <input id="tlf" type="text" name="tlf" placeholder="Teléfono" required="" /><br>
-    <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required=""></textarea><br>
-    <input id="submit" type="submit" value="Enviar">
-</form>
+
+{{ form(contact_form) }}
+
 <p>A los efectos de lo que dispone la ley orgánica 15/1999, de 13 de Diciembre, de protección de Datos de Carácter Personal, le informamos que sus datos personales incluidos en esta Solicitud de Información, que libre y voluntariamente facilita usted en este formulario, van a ser incorporados a un fichero automatizado, creado bajo la responsabilidad de Acero, Diseño y Manufactura, S.L.L. de Alboraya, provincia de Valencia. Estos datos son obligatorios para ser atendido en la solicitud de información que cursa. Usted tiene derecho a acceder a la información que le concierne recopilada es este fichero, rectificarla de ser errónea o cancelarla en la siguiente dirección Acero, Diseño y Manufactura, S.L.L., Calderers 56, 46120 Alboraya (Valencia)
 </p>
 <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24626.271810398608!2d-0.334311!3d39.50808!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60463346557b3d%3A0x79f4e342e2daaa4e!2sCarrer+dels+Calderers%2C+56%2C+46120+Alboraia%2C+Valencia!5e0!3m2!1ses!2ses!4v1410434431240" width="400" height="300" frameborder="0" style="border:0"></iframe>

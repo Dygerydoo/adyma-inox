@@ -110,12 +110,9 @@ cocteleria:
         template: 'AdymaMainBundle:Default:cocteleria.html.twig'
         private: false
 
-contacto:
-    path:     /contacto
-    defaults:
-        _controller: FrameworkBundle:Template:template
-        template: 'AdymaMainBundle:Default:contacto.html.twig'
-        private: false
+default_controller:
+    resource: "@AdymaMainBundle/Controller/DefaultController.php"
+    type: annotation
 
 kcone:
     path:     /barbacoas/one

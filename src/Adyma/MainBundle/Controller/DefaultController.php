@@ -5,43 +5,48 @@ namespace Adyma\MainBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Symfony\Component\HttpFoundation\Request;
+use Adyma\MainBundle\Form\Type\ContactType;
 
 class DefaultController extends Controller
 {
-
-
     /**
-    * @Route("/contacto", name="contacto")
-    * @Template()
-    */
-    public function contactForm(){
+     * @Route("/contacto", _name="contacto")
+     * @Template()
+     */
+    public function contactAction(Request $request)
+    {
+        $form = $this->createForm(new ContactType());
 
-                $nombre = $_POST['nombre'];
-                $apellido = $_POST['apellido'];
-                $email = $_POST['email'];
-                $telefono = $_POST['telefono'];
+        if ($request->isMethod('POST')) {
+            $form->bind($request);
 
-                $header = 'From: ' . $email . " \r\n";
-                $header .= "X-Mailer: PHP/" . phpversion() . " \r\n" . " \r\n";
-                $header .= 'MIME-Version: 1.0' . "\r\n";
-                $header .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+            if ($form->isValid()) {
+                $message = \Swift_Message::newInstance()
+                ->setSubject($form->get('subject')->getData())
+                ->setFrom($form->get('email')->getData())
+                ->setTo('caserofrancisco@gmail.com')
+                ->setBody(
+                    $this->renderView(
+                        'AdymaMainBundle:Default:one.html.twig',
+                        array(
+                            'ip' => $request->getClientIp(),
+                            'name' => $form->get('name')->getData(),
+                            'message' => $form->get('message')->getData()
+                            )
+                        )
+                    );
 
-                $mensaje = "Este mensaje fue enviado por " . "<b>" . $nombre . " " . $apellido . "</b>" . "<br>" . "<br>";
+                $this->get('mailer')->send($message);
 
-                $mensaje .= "Con teléfono de contacto " . "<b>" . $telefono . "</b>" . "<br>" . "<br>";
+                $request->getSession()->getFlashBag()->add('success', 'Tu email ha sido enviado. Gracias!');
 
-                $mensaje .= "Su e-mail es: " . $email . "<br>" . "<br>" . "<br>";
-
-                $mensaje .= "Mensaje: " . "<br>" . $_POST['mensaje'] . "<br>" . "<br>" . "<br>";
-
-                $mensaje .= "Enviado el " . date('d/m/Y', time());
-
-                $para = 'contacto@adymainox.com';
-
-                $asunto = "Solicitud de Presupuesto - " . $nombre . " " . $apellido . " \r\n";
-
-                mail($para, $asunto, utf8_decode($mensaje), $header);
-
-                echo '<script type="text/javascript">alert("Tu mensaje ha sido enviado. Te responderemos en breves.");</script>';
+                return $this->redirect($this->generateUrl('contacto'));
+            }
         }
+
+        return array(
+            'contact_form' => $form->createView()
+        );
+    }
 }
