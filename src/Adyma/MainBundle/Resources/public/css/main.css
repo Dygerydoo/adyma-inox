@@ -656,14 +656,18 @@ footer p{
         display:block;
         vertical-align: top;
         width: 100%;
-        margin-right: 4.5%;
-        margin-left:2.5%;
     }
     .pright{
         background: #bfbfbf;
         display:inline-block;
         margin-left: 0;
         width: 100%;
+    }
+    .undercontent p {
+        font-size: 13px;
+        padding-bottom: 20px;
+        padding:0;
+        margin:10px;
     }
     footer{
         height:45px;
