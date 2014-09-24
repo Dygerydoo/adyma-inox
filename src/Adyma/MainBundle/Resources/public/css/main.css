@@ -445,13 +445,13 @@ footer p{
 }
 .pright p{
     margin-top: -15px;
-    font-size: 14px;
+    font-size: 0.9em;
     font-weight: bold;
 }
 .pright h4{
     font-family: 'Montserrat';
     color: white;
-    font-size: 21px;
+    font-size: 1.2em;
     margin-left: 5%;
 }
 .pleft{
@@ -575,9 +575,12 @@ footer p{
     .indexfirstview{
         background-position: 35%;
     }
+    .knowadyma{
+        height:160px;
+    }
     .indexfirstview img {
-        width: 100%;
-        padding-top: 210px;
+        width: 55%;
+        padding-top: 140px;
     }
     .menunavtrigger{
         padding: 21px 0px;
@@ -645,6 +648,9 @@ footer p{
     }
     .indexfirstview h3{
         bottom: 125px;
+    }
+    .teaminfo{
+        margin: 25px 0px 21px 0px;
     }
 }
 @media (min-width:1500px){
