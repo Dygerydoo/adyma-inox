@@ -661,7 +661,7 @@ footer p{
     }
     .pright{
         background: #bfbfbf;
-        display:block;
+        display:inline-block;
         margin-left: 0;
         width: 100%;
     }
