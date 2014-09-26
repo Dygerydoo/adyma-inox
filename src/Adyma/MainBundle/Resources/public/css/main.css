@@ -618,6 +618,14 @@ footer p{
     nav ul li a {
         font-size:0.7em;
     }
+    .headcontent{
+        position:relative;
+        height:125px;
+    }
+    .undercontent{
+        padding-top: 3%;
+        margin-top: 0;
+    }
     .headcontent h3{
         font-size: 1.7em;
         top: 17px;
