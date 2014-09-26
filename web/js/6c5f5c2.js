@@ -367,3 +367,10 @@ $(document).ready(function () {
     });
 
 });
+
+//Display menu on mobile devices
+$(document).ready(function(){
+    $('.menunavtrigger').click(function(){
+        $('#expand').toggleClass('expand');
+    });
+});

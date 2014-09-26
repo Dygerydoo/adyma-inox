@@ -47,6 +47,10 @@ nav li a{
     background: url('../images/kcone/viewsc2.png');
     background-size:cover;
 }
+.sc3{
+    background: url('../images/kcone/viewsc3.png');
+    background-size:cover;
+}
 .logosc0{
     display:block;
     margin:auto;
@@ -105,3 +109,90 @@ nav li a{
     font-family: 'Source Sans Pro';
     font-weight: 300;
 }
+#seccion3 h3{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 3em;
+    position: relative;
+    top: -21%;
+}
+#seccion3 p{
+    font-size: 1.3em;
+    text-align: center;
+    position: relative;
+    top: -21%;
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+}
+@media (min-width: 400px) and (max-width: 700px) and (orientation:landscape){
+    .logosc0{
+        width:50%;
+    }
+    .descriptioncontainer h3 {
+        font-size: 1.3em;
+        top: 9%;
+    }
+    .descriptioncontainer p{
+        font-size:0.8em;
+    }
+    .descriptioncontainerleft h3 {
+        font-size: 1.3em;
+        top: 9%;
+    }
+    .descriptioncontainerleft p{
+        font-size:0.8em;
+    }
+    #seccion3 h3{
+        font-size:1.3em;
+        top:-18%;
+    }
+    #seccion3 p{
+        font-size:0.8em;
+    }
+}
+@media (min-width: 300px) and (orientation:portrait){
+    nav ul{
+        right:0;
+        padding-right: 0;
+        border-radius: none;
+    }
+    nav li{
+        padding:4px;
+    }
+    nav a{
+        font-size:0.9em;
+    }
+    .logosc0{
+        width: 80%;
+    }
+    .sc0{
+        background-size: contain;
+        background-position: center 100%;
+        background-repeat: no-repeat;
+    }
+    .sc3{
+        background-position-x: 38%;
+    }
+    .descriptioncontainer{
+        width:80%;
+        right:inherit;
+    }
+    .descriptioncontainer h3{
+        font-size:1.3em;
+    }
+    .descriptioncontainer p{
+        font-size:1.2em;
+        top:22%;
+    }
+    .descriptioncontainerleft{
+        width:80%;
+    }
+    .descriptioncontainerleft h3{
+        font-size:1.3em;
+    }
+    .descriptioncontainerleft p{
+        font-size:1.2em;
+        top:22%;
+    }
+}
+

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<title>{% block title %} {{ 'seo.index.title'|trans }} {% endblock title %}</title>
+<title>{% block title %} {{ 'seo.index.title'|trans }} {% endblock title %} - KC ONE</title>
 <meta name="description" content="{% block description %}{{ 'seo.index.description'|trans }}{% endblock description %}" />
+<meta name="viewport" content="width=device-width">
 <meta name="keywords" content="{% block keywords %}{{ 'seo.index.keywords'|trans }}{% endblock keywords %}" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
@@ -28,7 +29,6 @@ filter='cssrewrite'
                         <li><a data-menuanchor="prestaciones" href="#prestaciones">{{ 'menukcone.prestaciones'|trans }}</a></li>
                         <li><a data-menuanchor="uso" href="#uso">{{ 'menukcone.usos'|trans }}</a></li>
                         <li><a data-menuanchor="fabricacion" href="#fabricacion">{{ 'menukcone.fabricacion'|trans }}</a></li>
-                        <li><a data-menuanchor="utilidades" href="#utilidades">{{ 'menukcone.utilidades'|trans }}</a></li>
                     </ul>
                 </nav>
                 <img class="logosc0" src={{ asset('bundles/adymamain/images/kcone/logo.png') }} alt="Logo KC-ONE">
@@ -39,8 +39,6 @@ filter='cssrewrite'
                     <p>La KC-ONE está completamente fabricada en acero inoxidable y con el interior recubierto de ladrillo.
                     <br><br>
                     De esta manera se consigue un acabado espectacular y funcional a la vez. Mantiene las propiedades calorificas del ladrillo y la durabilidad y resistencia del INOX.
-                    <br><br>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                 </div>
             </div>
             <div id="seccion2" data-anchor="uso" class=" section sc2">
@@ -49,15 +47,15 @@ filter='cssrewrite'
                     <p>La KC-ONE está completamente fabricada en acero inoxidable y con el interior recubierto de ladrillo.
                     <br><br>
                     De esta manera se consigue un acabado espectacular y funcional a la vez. Mantiene las propiedades calorificas del ladrillo y la durabilidad y resistencia del INOX.
-                    <br><br>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                    </p>
                 </div>
             </div>
             <div id="seccion3" data-anchor="fabricacion" class=" section sc3">
-
-            </div>
-            <div id="seccion3" data-anchor="utilidades" class=" section sc3">
-
+                <h3>VERSATILIDAD</h3>
+                    <p>La KC-ONE está disponible tanto en versión portatil como empotrada.
+                    <br><br>
+                    Puedes tenerla fija en tu terraza o llevarla a una barbacoa familiar.
+                    </p>
             </div>
         </div>
         <script>
@@ -67,7 +65,7 @@ filter='cssrewrite'
                     keyboardScrolling: true,
                     touchSensitivity: 1,
                     easing: 'easeOutQuad',
-                    anchors: ['portada','prestaciones','uso','fabricacion','utilidades'],
+                    anchors: ['portada','prestaciones','uso','fabricacion',],
                     autoScrolling: true,
                     resize:false,
                 });
