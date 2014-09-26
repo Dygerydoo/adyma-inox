@@ -626,6 +626,12 @@ footer p{
         padding-top: 3%;
         margin-top: 0;
     }
+    .minishow ul{
+        max-width: 230px;
+        position:relative;
+        left:0;
+        right:0;
+    }
     .headcontent h3{
         font-size: 1.7em;
         top: 17px;
@@ -660,6 +666,9 @@ footer p{
         left:0;
         border-right: none;
         width:98px;
+    }
+    footer{
+        height:50px;
     }
 
 }
