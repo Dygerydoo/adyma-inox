@@ -655,7 +655,7 @@ footer p{
     }
 
 }
-@media screen (max-width: 800px) and (min-width: 300px){
+@media (min-width: 300px) and (orientation:portrait){
     .indexfirstview{
         background-position: 35%;
     }
@@ -739,11 +739,24 @@ footer p{
         border-right: none;
         width:98px;
     }
+    .headcontent{
+        height:200px;
+        position:relative;
+    }
+    .headcontent img{
+        width:170%;
+    }
+    .headcontent h3{
+        top:12%;
+    }
+    .headcontent p{
+        top:65%;
+    }
     .indexfirstview h3{
         bottom: 125px;
     }
     .teaminfo{
-        margin: 25px 0px 21px 0px;
+        margin: 25px 0px 25px 0px;
     }
     .pleft{
         display:block;
@@ -757,6 +770,10 @@ footer p{
         display:inline-block;
         margin-left: 0;
         width: 100%;
+    }
+    .undercontent{
+        margin-top:56%;
+        padding-top: 0%;
     }
     .undercontent p {
         font-size: 13px;

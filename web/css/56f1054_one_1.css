@@ -150,7 +150,7 @@ nav li a{
         font-size:0.8em;
     }
 }
-@media screen (max-width: 400px) and (orientation:portrait){
+@media (min-width: 300px) and (orientation:portrait){
     nav ul{
         right:0;
         padding-right: 0;
@@ -161,6 +161,38 @@ nav li a{
     }
     nav a{
         font-size:0.9em;
+    }
+    .logosc0{
+        width: 80%;
+    }
+    .sc0{
+        background-size: contain;
+        background-position: center 100%;
+        background-repeat: no-repeat;
+    }
+    .sc3{
+        background-position-x: 38%;
+    }
+    .descriptioncontainer{
+        width:80%;
+        right:inherit;
+    }
+    .descriptioncontainer h3{
+        font-size:1.3em;
+    }
+    .descriptioncontainer p{
+        font-size:1.2em;
+        top:22%;
+    }
+    .descriptioncontainerleft{
+        width:80%;
+    }
+    .descriptioncontainerleft h3{
+        font-size:1.3em;
+    }
+    .descriptioncontainerleft p{
+        font-size:1.2em;
+        top:22%;
     }
 }
 
