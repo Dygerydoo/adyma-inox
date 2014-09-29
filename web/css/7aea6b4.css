@@ -79,14 +79,6 @@ nav ul li a{
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
-nav ul li a:hover{
-    border-bottom:2px solid white;
-    padding-bottom: 2px;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-}
 .menunavtrigger{
     display:none;
 }
@@ -618,6 +610,20 @@ footer p{
     nav ul li a {
         font-size:0.7em;
     }
+    .headcontent{
+        position:relative;
+        height:125px;
+    }
+    .undercontent{
+        padding-top: 3%;
+        margin-top: 0;
+    }
+    .minishow ul{
+        max-width: 230px;
+        position:relative;
+        left:0;
+        right:0;
+    }
     .headcontent h3{
         font-size: 1.7em;
         top: 17px;
@@ -652,6 +658,12 @@ footer p{
         left:0;
         border-right: none;
         width:98px;
+    }
+    .map{
+        display:none;
+    }
+    footer{
+        height:50px;
     }
 
 }
@@ -772,13 +784,16 @@ footer p{
         width: 100%;
     }
     .undercontent{
-        margin-top:56%;
+        margin-top:10%;
         padding-top: 0%;
     }
     .undercontent p {
         font-size: 13px;
         padding-bottom: 20px;
         padding:0;
+    }
+    .map{
+        display:none;
     }
     footer{
         height:45px;

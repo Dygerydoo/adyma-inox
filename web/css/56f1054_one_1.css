@@ -193,6 +193,13 @@ nav li a{
     .descriptioncontainerleft p{
         font-size:1.2em;
         top:22%;
+        left:-20%;
+    }
+    #seccion3 h3{
+        font-size:1.5em;
+    }
+    #seccion3 p{
+        font-size:1em;
     }
 }
 
