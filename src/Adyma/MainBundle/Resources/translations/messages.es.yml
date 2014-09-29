@@ -1,8 +1,9 @@
 seo:
     index:
         title: Adyma Inox
-        description: Blablablablablabla #CAMBIAR
-        keywords: Pensarselas bien #CAMBIAR
+        description: "Fabricación de productos a medida en acero inoxidable para hostelería. Mobiliario industrial en general. Artículos en acero inoxidable para decoración e interiorismo."
+        descriptionface: "Fabricación de productos a medida en acero inoxidable para hostelería. Mobiliario industrial en general. Artículos en acero inoxidable para decoración e interiorismo."
+        keywords: "Acero, Acero Inoxidable, Inox, Alboraya, Valencia, Inoxidable, Construcciones, Metálicas, Construcciones Metálicas, Interiorismo, Coctelería, Naval, Laboratorios"
 
 menu:
     inicio: Adyma Inox

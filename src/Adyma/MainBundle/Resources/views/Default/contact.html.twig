@@ -1,5 +1,5 @@
 {% extends 'AdymaMainBundle::section.html.twig' %}
-{% block title %} {{ 'seo.index.title'|trans }} {% endblock title %}
+{% block title %} {{ 'seo.index.title'|trans }} - Contacto {% endblock title %}
 {% block description %}{{ 'seo.index.description'|trans }}{% endblock description %}
 {% block keywords %}{{ 'seo.index.keywords'|trans }}{% endblock keywords %}
 {% block headcontent %}
@@ -9,7 +9,8 @@
 {% endblock %}
 {% block undercontent %}
 
-{{ form(contact_form) }}
+<!--{{ form(contact_form) }}-->
+<a class="contactbtn" href="mailto:contacto@adymainox.com">Envianos un correo</a>
 
 <p>A los efectos de lo que dispone la ley orgánica 15/1999, de 13 de Diciembre, de protección de Datos de Carácter Personal, le informamos que sus datos personales incluidos en esta Solicitud de Información, que libre y voluntariamente facilita usted en este formulario, van a ser incorporados a un fichero automatizado, creado bajo la responsabilidad de Acero, Diseño y Manufactura, S.L.L. de Alboraya, provincia de Valencia. Estos datos son obligatorios para ser atendido en la solicitud de información que cursa. Usted tiene derecho a acceder a la información que le concierne recopilada es este fichero, rectificarla de ser errónea o cancelarla en la siguiente dirección Acero, Diseño y Manufactura, S.L.L., Calderers 56, 46120 Alboraya (Valencia)
 </p>
