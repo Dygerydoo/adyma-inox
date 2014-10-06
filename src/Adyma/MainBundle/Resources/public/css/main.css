@@ -238,6 +238,15 @@ footer p{
     color: #2e2e2e;
     font-weight: bold;
 }
+.contactp{
+    text-align: center;
+    margin-left:0 !important;
+    padding-right: 0 !important;
+}
+.pspan{
+    font-weight: bold;
+    font-size:1.4em;
+}
 /* Secciones Index */
 .teaminfo{
     width:310px;
@@ -509,10 +518,11 @@ footer p{
 }
 .map{
     border: 0;
-    position: absolute;
-    height: 102px;
-    top: 300px;
-    right: 65px;
+    position: relative;
+    float: right;
+    right: 3%;
+    bottom: 420px;
+    height:130px;
     border: 10px solid white !important;
     border-radius: 10px;
 }
