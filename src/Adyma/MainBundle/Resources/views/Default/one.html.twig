@@ -26,14 +26,14 @@ filter='cssrewrite'
                 <nav>
                     <ul>
                         <li><a href="{{ path('homepage') }}">{{ 'menu.inicio'|trans }}</a></li>
-                        <li><a data-menuanchor="prestaciones" href="#prestaciones">{{ 'menukcone.fabricacion'|trans }}</a></li>
-                        <li><a data-menuanchor="uso" href="#uso">{{ 'menukcone.usos'|trans }}</a></li>
-                        <li><a data-menuanchor="fabricacion" href="#fabricacion">{{ 'menukcone.versatilidad'|trans }}</a></li>
+                        <li><a data-menuanchor="fabricacion" href="#fabricacion">{{ 'menukcone.fabricacion'|trans }}</a></li>
+                        <li><a data-menuanchor="prestaciones" href="#prestaciones">{{ 'menukcone.prestaciones'|trans }}</a></li>
+                        <li><a data-menuanchor="usos" href="#usos">{{ 'menukcone.usos'|trans }}</a></li>
                     </ul>
                 </nav>
                 <img class="logosc0" src={{ asset('bundles/adymamain/images/kcone/logo.png') }} alt="Logo KC-ONE">
             </div>
-            <div id="seccion1" data-anchor="prestaciones" class=" section sc1">
+            <div id="seccion1" data-anchor="fabricacion" class=" section sc1">
                 <div class="descriptioncontainer">
                     <h3>FABRICADA EN ACERO INOXIDABLE</h3>
                     <p>La KC-ONE está completamente fabricada en acero inoxidable y con el interior recubierto de ladrillo.
@@ -41,20 +41,26 @@ filter='cssrewrite'
                     De esta manera se consigue un acabado espectacular y funcional a la vez. Mantiene las propiedades calorificas del ladrillo y la durabilidad y resistencia del INOX.
                 </div>
             </div>
-            <div id="seccion2" data-anchor="uso" class=" section sc2">
+            <div id="seccion2" data-anchor="prestaciones" class=" section sc2">
                  <div class="descriptioncontainerleft">
-                    <h3>FABRICADA EN ACERO INOXIDABLE</h3>
-                    <p>La KC-ONE está completamente fabricada en acero inoxidable y con el interior recubierto de ladrillo.
+                    <h3>PRACTICA Y FUNCIONAL</h3>
+                    <p>Parrillas desmontables fabricadas acero inoxidable AISI-304.
+                    Parrillas aptas para lavavajillas.
+                    Cajón recoge cenizas.
                     <br><br>
-                    De esta manera se consigue un acabado espectacular y funcional a la vez. Mantiene las propiedades calorificas del ladrillo y la durabilidad y resistencia del INOX.
+                    Parrillas interiores fabricadas en acero macizo de 10x10.
+                    Convertible en mesa de apoyo cuando no se utiliza la zona de fuegos.
+                    Tapas deslizantes.
+                    Estante inferior de apoyo.
                     </p>
                 </div>
             </div>
-            <div id="seccion3" data-anchor="fabricacion" class=" section sc3">
+            <div id="seccion3" data-anchor="usos" class="section sc3">
                 <h3>VERSATILIDAD</h3>
-                    <p>La KC-ONE está disponible, tanto en versión portatil como empotrada.
-                    <br><br>
-                    Puedes tenerla fija en tu terraza o llevarla a una barbacoa familiar.
+                    <p>Barbacoa KC-ONE de carbón para utilización en el exterior, tanto en versión portátil como empotrada. <br><br>
+                    Fácil maniobrabilidad y movilidad.
+                    Modelos de una, dos y tres parrillas.
+                    Barbacoa para uso doméstico.
                     </p>
             </div>
         </div>
@@ -65,7 +71,7 @@ filter='cssrewrite'
                     keyboardScrolling: true,
                     touchSensitivity: 1,
                     easing: 'easeOutQuad',
-                    anchors: ['portada','prestaciones','uso','fabricacion',],
+                    anchors: ['portada','fabricacion','prestaciones','usos'],
                     autoScrolling: true,
                     resize:false,
                 });

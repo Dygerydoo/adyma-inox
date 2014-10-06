@@ -34,10 +34,9 @@ indexsections:
     description: 'Adyma inox es una empresa joven, creativa y dinámica,<br> formada por un equipo de profesionales con decadas de experiencia en el acero inoxidable.'
 
 menukcone:
+    fabricacion: Fabricación
     prestaciones: Prestaciones
     usos: Usos
-    fabricacion: Fabricación
-    versatilidad: Versatilidad
 
 footer:
     direction: 'Adyma Inox, construcciones metálicas. Calderers, 56. 46120, Alboraya, Valencia. Tel.: 961 861 241'
