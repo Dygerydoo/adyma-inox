@@ -31,6 +31,7 @@
     {% stylesheets
     'bundles/adymamain/css/main.css'
     'bundles/adymamain/css/normalize.css'
+    'bundles/adymamain/css/cookiecuttr.css'
     filter='cssrewrite'
     %}
     <link rel="stylesheet" href="{{ asset_url }}" />
@@ -136,21 +137,15 @@
     <!--Analytics-->
     <script>
     </script>
-    <!--<script>
-        $(document).ready(function(){
-            $(window).scroll(function(){
-                if ($(this).scrollTop() > 0) {
-                    $('.scrollToTop').fadeIn();
-                } else {
-                    $('.scrollToTop').fadeOut();
-                }
-            });
-            $('.scrollToTop').click(function(){
-                $('html, body').animate({scrollTop : 0},800);
-                return false;
-            });
+    <script>
+    $(document).ready(function () {
+        $.cookieCuttr({
+        cookieAnalytics: true,
+        cookieWhatAreTheyLink: 'http://www.allaboutcookies.org/es/',
+        cookieAnalyticsMessage: "Hacemos uso de cookies, para monitorizar las visitas a nuestra web, no guardamos ningún tipo de información personal.",
         });
-    </script>-->
+    });
+    </script>
     {% block javascripts %}{% endblock %}
     </body>
 </html>
